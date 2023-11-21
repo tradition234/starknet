@@ -1,2 +1,11 @@
 # starknet
 Starknet the best project on layer2
+What is Starknet?
+Starknet is a Validity Rollup Layer 2. It provides high throughput, low gas costs, and retains Ethereum Layer 1 levels of security
+Given a sudoku puzzle, verifying a solution is easier than solving from scratch. If our goal is to convince people of the statement “this puzzle has been solved”, we can save a lot of computation by having one person compute a solution and then propagate it for others to verify. In this strategy, each computation of a solution becomes a one-time event which does not require replication by society. In a similar vein, Starknet scales Ethereum by replacing heavy L1 computation with lighter (hence cheaper!) L1 verification using STARK proofs computed off-chain.
+How Starknet Scales Ethereum
+The Starknet Sequencer
+Secure Settlement on Ethereum
+Blockchains aim to achieve three core attributes: security, decentralization, and scalability. In the blockchain world, a well-known trilemma is that it's possible to achieve only two of these concurrently in a given system, inevitably requiring a compromise on the third. Ethereum places a higher emphasis on security and decentralization, impacting its scalability. Growth in the number of Ethereum users leads to slow transaction speeds and high gas prices, hindering Ethereum’s widespread adoption.
+How can we make Ethereum scalable without undermining its security and decentralization? This is where the Starknet Validity Rollup comes in. Combining Ethereum and Starknet achieves massive scalability.
+Starknet achieves scale by shifting transaction processing off the Ethereum Mainnet (what we call off-chain) while retaining a summary of the transactions onchain. Transactions are grouped in batches into blocks, processed off-chain, and then summarized into a single onchain transaction. Since transactions occur off-chain, it's vital to ensure the integrity of the transactions and their execution without having to re-execute them. Starknet addresses this by employing STARK (Scalable, Transparent ARgument of Knowledge) proofs for verifiable computation. Starknet then transmits only essential information about the block and the proof to Ethereum, where it is verified with minimal computational effort. 
